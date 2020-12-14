@@ -1,0 +1,360 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 14 17:26:40 CET 2020</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4877 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.users.TestLoginUser.loginUserHappy()'><b>loginUserHappy</b><br>Test class: api.users.TestLoginUser<br/>
+<a href="#Output-892262157" onClick='toggleBox("Output-892262157", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-892262157" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892262157">
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "veg994zipr@7jl9.pl",
+        "password": "mcKcig",
+        "username": null,
+        "token": null
+    }
+}
+<br/>
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "veg994zipr@7jl9.pl",
+        "password": "mcKcig",
+        "username": null,
+        "token": null
+    }
+}<br/>
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 277
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"115-4SpC4PJ0uNiZ0svS86u6Ag"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "user": {
+        "username": "wzfwll5xka",
+        "email": "veg994zipr@7jl9.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQzNjkzMTg1OWE1ZWVjZmYyNyIsInVzZXJuYW1lIjoid3pmd2xsNXhrYSIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.yxNlYRo3s8GmEcnxXEFBgq0mQdmKawuV9xbVFGRLFXc"
+    }
+}
+<br/>
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 277
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"115-4SpC4PJ0uNiZ0svS86u6Ag"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "user": {
+        "username": "wzfwll5xka",
+        "email": "veg994zipr@7jl9.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQzNjkzMTg1OWE1ZWVjZmYyNyIsInVzZXJuYW1lIjoid3pmd2xsNXhrYSIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.yxNlYRo3s8GmEcnxXEFBgq0mQdmKawuV9xbVFGRLFXc"
+    }
+}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.users.TestLoginUser@33cb5951</td></tr>
+<tr>
+<td title='api.users.TestRegisterUser.registerUserHappy()'><b>registerUserHappy</b><br>Test class: api.users.TestRegisterUser<br/>
+<a href="#Output-1484119658" onClick='toggleBox("Output-1484119658", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1484119658" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1484119658">
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "Ito41GSn8l@JmtZ.pl",
+        "password": "gdgV30",
+        "username": "0IRAGMzvcw",
+        "token": null
+    }
+}
+<br/>
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "Ito41GSn8l@JmtZ.pl",
+        "password": "gdgV30",
+        "username": "0IRAGMzvcw",
+        "token": null
+    }
+}<br/>
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 277
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"115-nbSW8zyNQ6ykmwwNWp44Xw"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "user": {
+        "username": "0iragmzvcw",
+        "email": "ito41gsn8l@jmtz.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQ0NjkzMTg1OWE1ZWVjZmYyOCIsInVzZXJuYW1lIjoiMGlyYWdtenZjdyIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.Q_YlPly2RwNYHOKY2S8sXnAJH-VZ0Ra8aLqNyVbdMo4"
+    }
+}
+<br/>
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:44 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 277
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"115-nbSW8zyNQ6ykmwwNWp44Xw"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "user": {
+        "username": "0iragmzvcw",
+        "email": "ito41gsn8l@jmtz.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQ0NjkzMTg1OWE1ZWVjZmYyOCIsInVzZXJuYW1lIjoiMGlyYWdtenZjdyIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.Q_YlPly2RwNYHOKY2S8sXnAJH-VZ0Ra8aLqNyVbdMo4"
+    }
+}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.users.TestRegisterUser@365c30cc</td></tr>
+<tr>
+<td title='api.users.TestRegisterUser.registerUserMissingPassword()'><b>registerUserMissingPassword</b><br>Test class: api.users.TestRegisterUser<br/>
+<a href="#Output-502386384" onClick='toggleBox("Output-502386384", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-502386384" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-502386384">
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "4ktA9pzBCt@qCm1.pl",
+        "password": null,
+        "username": "vXyGvzmDJ3",
+        "token": null
+    }
+}
+<br/>
+Request method:	POST
+Request URI:	https://qa-task.backbasecloud.com/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authorization=Basic Y2FuZGlkYXRleDpxYS1pcy1jb29s
+				authority=qa-task.backbasecloud.com
+				Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user": {
+        "email": "4ktA9pzBCt@qCm1.pl",
+        "password": null,
+        "username": "vXyGvzmDJ3",
+        "token": null
+    }
+}<br/>
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 143
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "errors": {
+        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
+        "error": {
+            
+        }
+    }
+}
+<br/>
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.14.0 (Ubuntu)
+Date: Mon, 14 Dec 2020 16:26:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 143
+Connection: keep-alive
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
+Strict-Transport-Security: max-age=15768000
+
+{
+    "errors": {
+        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
+        "error": {
+            
+        }
+    }
+}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.users.TestRegisterUser@365c30cc</td></tr>
+</table><p>
+</body>
+</html>
