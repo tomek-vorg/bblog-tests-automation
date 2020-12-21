@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="api.users.TestLoginUser" class="method navigator-link" hash-for-method="loginUserHappy">loginUserHappy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="ui.users.TestUiRegisterUser" class="method navigator-link" hash-for-method="registerUser">registerUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -127,6 +132,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ui.users.TestUiRegisterUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUser">
+                  </a> <!-- registerUser -->
+                  <span class="method-name">registerUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -177,6 +197,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;api.users.TestLoginUser&quot;/&gt;
       &lt;class name=&quot;api.users.TestRegisterUser&quot;/&gt;
+      &lt;class name=&quot;ui.users.TestUiRegisterUser&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
 &lt;/suite&gt; &lt;!-- Command line suite --&gt;
@@ -190,7 +211,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (2 classes)</span>
+                <span class="test-name">Command line test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,24 +237,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginUserHappy')
-data.setCell(0, 2, 'api.users.TestLoginUser')
-data.setCell(0, 3, 644);
+data.setCell(0, 1, 'registerUser')
+data.setCell(0, 2, 'ui.users.TestUiRegisterUser')
+data.setCell(0, 3, 1501);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'registerUserHappy')
-data.setCell(1, 2, 'api.users.TestRegisterUser')
-data.setCell(1, 3, 624);
+data.setCell(1, 1, 'loginUserHappy')
+data.setCell(1, 2, 'api.users.TestLoginUser')
+data.setCell(1, 3, 659);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'registerUserMissingPassword')
+data.setCell(2, 1, 'registerUserHappy')
 data.setCell(2, 2, 'api.users.TestRegisterUser')
-data.setCell(2, 3, 556);
+data.setCell(2, 3, 631);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerUserMissingPassword')
+data.setCell(3, 2, 'api.users.TestRegisterUser')
+data.setCell(3, 3, 581);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -245,7 +270,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">registerUserMissingPassword</span>
+              <span class="reporter-method-name">registerUserHappy</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Request method:	POST
 Request URI:	https://qa-task.backbasecloud.com/api/users
@@ -263,9 +288,9 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "4ktA9pzBCt@qCm1.pl",
-        "password": null,
-        "username": "vXyGvzmDJ3",
+        "email": "2PFc4LMO1C@njxq.pl",
+        "password": "D2Gv7n",
+        "username": "l1Gmx5KYec",
         "token": null
     }
 }
@@ -286,49 +311,47 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "4ktA9pzBCt@qCm1.pl",
-        "password": null,
-        "username": "vXyGvzmDJ3",
+        "email": "2PFc4LMO1C@njxq.pl",
+        "password": "D2Gv7n",
+        "username": "l1Gmx5KYec",
         "token": null
     }
 }</span>
-                <span class="reporter-method-output">HTTP/1.1 500 Internal Server Error
+                <span class="reporter-method-output">HTTP/1.1 200 OK
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:45 GMT
+Date: Mon, 21 Dec 2020 14:08:28 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 143
+Content-Length: 277
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
+ETag: W/"115-TMptxLEeDr4hiMT6bpboBg"
 Strict-Transport-Security: max-age=15768000
 
 {
-    "errors": {
-        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
-        "error": {
-            
-        }
+    "user": {
+        "username": "l1gmx5kyec",
+        "email": "2pfc4lmo1c@njxq.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTBhYzVjNjkzMTg1OWE1ZWVkMDMwNiIsInVzZXJuYW1lIjoibDFnbXg1a3llYyIsImV4cCI6MTYxMzc0MzcwOCwiaWF0IjoxNjA4NTU5NzA4fQ.KUG7CNMBzoDLlj2wwPn_3UgUvna5erC_ntXZZYqo6yc"
     }
 }
 </span>
-                <span class="reporter-method-output">HTTP/1.1 500 Internal Server Error
+                <span class="reporter-method-output">HTTP/1.1 200 OK
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:45 GMT
+Date: Mon, 21 Dec 2020 14:08:28 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 143
+Content-Length: 277
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
+ETag: W/"115-TMptxLEeDr4hiMT6bpboBg"
 Strict-Transport-Security: max-age=15768000
 
 {
-    "errors": {
-        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
-        "error": {
-            
-        }
+    "user": {
+        "username": "l1gmx5kyec",
+        "email": "2pfc4lmo1c@njxq.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTBhYzVjNjkzMTg1OWE1ZWVkMDMwNiIsInVzZXJuYW1lIjoibDFnbXg1a3llYyIsImV4cCI6MTYxMzc0MzcwOCwiaWF0IjoxNjA4NTU5NzA4fQ.KUG7CNMBzoDLlj2wwPn_3UgUvna5erC_ntXZZYqo6yc"
     }
 }</span>
               </div> <!-- reporter-method-output-div -->
@@ -352,8 +375,8 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "veg994zipr@7jl9.pl",
-        "password": "mcKcig",
+        "email": "gdnfte3gun@swhv.pl",
+        "password": "jdsvzR",
         "username": null,
         "token": null
     }
@@ -375,53 +398,53 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "veg994zipr@7jl9.pl",
-        "password": "mcKcig",
+        "email": "gdnfte3gun@swhv.pl",
+        "password": "jdsvzR",
         "username": null,
         "token": null
     }
 }</span>
                 <span class="reporter-method-output">HTTP/1.1 200 OK
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:44 GMT
+Date: Mon, 21 Dec 2020 14:08:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 277
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"115-4SpC4PJ0uNiZ0svS86u6Ag"
+ETag: W/"115-FFpd6SIc+hDw//mIpbUC/g"
 Strict-Transport-Security: max-age=15768000
 
 {
     "user": {
-        "username": "wzfwll5xka",
-        "email": "veg994zipr@7jl9.pl",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQzNjkzMTg1OWE1ZWVjZmYyNyIsInVzZXJuYW1lIjoid3pmd2xsNXhrYSIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.yxNlYRo3s8GmEcnxXEFBgq0mQdmKawuV9xbVFGRLFXc"
+        "username": "f8costa0ix",
+        "email": "gdnfte3gun@swhv.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTBhYzViNjkzMTg1OWE1ZWVkMDMwNSIsInVzZXJuYW1lIjoiZjhjb3N0YTBpeCIsImV4cCI6MTYxMzc0MzcwOCwiaWF0IjoxNjA4NTU5NzA4fQ.UBlqAUL_EXOwdaOQykKQHTiUBRHx0qNxV_p98EpyVbo"
     }
 }
 </span>
                 <span class="reporter-method-output">HTTP/1.1 200 OK
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:44 GMT
+Date: Mon, 21 Dec 2020 14:08:28 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 277
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"115-4SpC4PJ0uNiZ0svS86u6Ag"
+ETag: W/"115-FFpd6SIc+hDw//mIpbUC/g"
 Strict-Transport-Security: max-age=15768000
 
 {
     "user": {
-        "username": "wzfwll5xka",
-        "email": "veg994zipr@7jl9.pl",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQzNjkzMTg1OWE1ZWVjZmYyNyIsInVzZXJuYW1lIjoid3pmd2xsNXhrYSIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.yxNlYRo3s8GmEcnxXEFBgq0mQdmKawuV9xbVFGRLFXc"
+        "username": "f8costa0ix",
+        "email": "gdnfte3gun@swhv.pl",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZTBhYzViNjkzMTg1OWE1ZWVkMDMwNSIsInVzZXJuYW1lIjoiZjhjb3N0YTBpeCIsImV4cCI6MTYxMzc0MzcwOCwiaWF0IjoxNjA4NTU5NzA4fQ.UBlqAUL_EXOwdaOQykKQHTiUBRHx0qNxV_p98EpyVbo"
     }
 }</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">registerUserHappy</span>
+              <span class="reporter-method-name">registerUserMissingPassword</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Request method:	POST
 Request URI:	https://qa-task.backbasecloud.com/api/users
@@ -439,9 +462,9 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "Ito41GSn8l@JmtZ.pl",
-        "password": "gdgV30",
-        "username": "0IRAGMzvcw",
+        "email": "kknwWfFWff@kWkw.pl",
+        "password": null,
+        "username": "lMzjCHbGEU",
         "token": null
     }
 }
@@ -462,47 +485,49 @@ Multiparts:		<none>
 Body:
 {
     "user": {
-        "email": "Ito41GSn8l@JmtZ.pl",
-        "password": "gdgV30",
-        "username": "0IRAGMzvcw",
+        "email": "kknwWfFWff@kWkw.pl",
+        "password": null,
+        "username": "lMzjCHbGEU",
         "token": null
     }
 }</span>
-                <span class="reporter-method-output">HTTP/1.1 200 OK
+                <span class="reporter-method-output">HTTP/1.1 500 Internal Server Error
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:44 GMT
+Date: Mon, 21 Dec 2020 14:08:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 277
+Content-Length: 143
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"115-nbSW8zyNQ6ykmwwNWp44Xw"
+ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
 Strict-Transport-Security: max-age=15768000
 
 {
-    "user": {
-        "username": "0iragmzvcw",
-        "email": "ito41gsn8l@jmtz.pl",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQ0NjkzMTg1OWE1ZWVjZmYyOCIsInVzZXJuYW1lIjoiMGlyYWdtenZjdyIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.Q_YlPly2RwNYHOKY2S8sXnAJH-VZ0Ra8aLqNyVbdMo4"
+    "errors": {
+        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
+        "error": {
+            
+        }
     }
 }
 </span>
-                <span class="reporter-method-output">HTTP/1.1 200 OK
+                <span class="reporter-method-output">HTTP/1.1 500 Internal Server Error
 Server: nginx/1.14.0 (Ubuntu)
-Date: Mon, 14 Dec 2020 16:26:44 GMT
+Date: Mon, 21 Dec 2020 14:08:29 GMT
 Content-Type: application/json; charset=utf-8
-Content-Length: 277
+Content-Length: 143
 Connection: keep-alive
 X-Powered-By: Express
 Vary: X-HTTP-Method-Override
-ETag: W/"115-nbSW8zyNQ6ykmwwNWp44Xw"
+ETag: W/"8f-KLq9HHrLocDxBRW98sZsYQ"
 Strict-Transport-Security: max-age=15768000
 
 {
-    "user": {
-        "username": "0iragmzvcw",
-        "email": "ito41gsn8l@jmtz.pl",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZDc5MjQ0NjkzMTg1OWE1ZWVjZmYyOCIsInVzZXJuYW1lIjoiMGlyYWdtenZjdyIsImV4cCI6MTYxMzE0NzIwNCwiaWF0IjoxNjA3OTYzMjA0fQ.Q_YlPly2RwNYHOKY2S8sXnAJH-VZ0Ra8aLqNyVbdMo4"
+    "errors": {
+        "message": "The \"password\" argument must be one of type string, Buffer, TypedArray, or DataView. Received type object",
+        "error": {
+            
+        }
     }
 }</span>
               </div> <!-- reporter-method-output-div -->
@@ -529,18 +554,29 @@ Strict-Transport-Security: max-age=15768000
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginUserHappy</span>
-                <span class="method-start">3016 ms</span>
+                <span class="method-start">3028 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">api.users.TestRegisterUser</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">registerUserHappy</span>
-                <span class="method-start">3666 ms</span>
+                <span class="method-start">3694 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">registerUserMissingPassword</span>
-                <span class="method-start">4291 ms</span>
+                <span class="method-start">4326 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ui.users.TestUiRegisterUser</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">preconditions</span>
+                <span class="method-start">4908 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">registerUser</span>
+                <span class="method-start">8941 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

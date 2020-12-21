@@ -3,8 +3,10 @@ api\condition\standard\ResponseBodyCondition.class
 api\resources\models\users\PostUsersOutput.class
 api\services\ApiClient$Config.class
 api\services\JSON$ByteArrayAdapter.class
+ui\models\home\RegisterPageObjects.class
 api\resources\models\users\User$UserBuilder.class
 api\resources\models\users\PostUsersInput.class
+ui\base\BasicData.class
 api\services\ApiClientUtils$SystemOutStreamCollectableByReport.class
 api\services\JSON$LocalDateTypeAdapter.class
 api\resources\models\users\PostUsersInput$PostUsersInputBuilder.class
@@ -15,6 +17,7 @@ api\condition\Conditions.class
 api\executors\users\RegisterUserExecutor.class
 api\services\ApiRequest.class
 api\resources\models\users\PostUsersOutput$PostUsersOutputBuilder.class
+ui\models\home\HomePageObjects.class
 api\condition\data\GeneralErrorsMessage.class
 api\services\bblog\users\post\PostUsersApiRequest.class
 api\services\ApiClient.class

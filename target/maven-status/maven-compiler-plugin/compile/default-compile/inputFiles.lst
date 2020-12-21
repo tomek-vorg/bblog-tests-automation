@@ -1,3 +1,4 @@
+C:\Users\vorga\bblog-tests-automation\src\main\java\ui\base\BasicData.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\ApiRequest.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\resources\models\users\PostUsersInput.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\condition\standard\StatusCodeCondition.java
@@ -8,6 +9,7 @@ C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\bblog\users\pos
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\assertions\errors\ErrorsOutput.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\resources\models\users\PostUsersBuilder.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\resources\models\users\User.java
+C:\Users\vorga\bblog-tests-automation\src\main\java\ui\models\home\HomePageObjects.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\JSON.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\condition\Condition.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\assertions\AssertableResponse.java
@@ -19,6 +21,7 @@ C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\bblog\users\pos
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\resources\models\users\PostUsersLoginBuilder.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\ApiClientUtils.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\bblog\tags\get\GetTagsService.java
+C:\Users\vorga\bblog-tests-automation\src\main\java\ui\models\home\RegisterPageObjects.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\assertions\errors\GeneralErrorOutput.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\resources\models\users\PostUsersLoginInput.java
 C:\Users\vorga\bblog-tests-automation\src\main\java\api\services\JsonObjectMapper.java

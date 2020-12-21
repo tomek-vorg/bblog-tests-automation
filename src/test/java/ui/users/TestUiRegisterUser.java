@@ -9,16 +9,23 @@ import org.testng.annotations.Test;
 import ui.models.home.HomePageObjects;
 import ui.models.home.RegisterPageObjects;
 
+import static ui.base.BasicData.BASE_URL;
+
 public class TestUiRegisterUser {
 
   private final WebDriver driver = new ChromeDriver();
   private final HomePageObjects mainPage = new HomePageObjects(driver);
   private final RegisterPageObjects registerPage = new RegisterPageObjects(driver);
 
+
+  /*
+  * dont have experience with remote driver, sorry for that, for run this test you need to have Chrome 87, and path to ChromeDriver set here
+  * */
+
   @BeforeClass
   public void preconditions() {
     System.setProperty("webdriver.chrome.driver", "C:\\utils\\chromedriver.exe");
-    driver.get("https://candidatex:qa-is-cool@qa-task.backbasecloud.com/");
+    driver.get(BASE_URL);
     driver.manage().window().maximize();
   }
 
